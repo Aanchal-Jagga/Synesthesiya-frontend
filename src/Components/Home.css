@@ -1,0 +1,158 @@
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Apply your scenic background image */
+.home-background {
+  background-size: cover;
+  min-height: 90vh;
+  padding: 2rem;
+  position: relative; 
+  background-size: cover;
+  background-attachment: fixed; 
+  transition: background-position 2s ease-in-out;
+  /* transition: 3s transform .5s; */
+  
+} 
+.home-background:hover {
+  background-position: 60% 70%;
+  /* animation: zoom-in-zoom-out 1s ease ;  */
+  /* transform: scale(1.5) ; */
+}
+
+/* @keyframes zoom-in-zoom-out {
+  0% {
+    scale: 100%;
+  }
+  50% {
+    scale: 150%;
+  }
+  100% {
+    scale: 100%;
+  }
+} */
+
+/* Center content */
+/* .content-box {
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
+  width: 500px;
+  text-align: center;
+  margin: auto;
+} */
+
+/* @keyframes glow {
+  from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073;
+  }
+  to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #0b269f, 0 0 40px #6b0bc0;
+  }
+} */
+
+
+
+h4{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #cc112d;
+  font-size: 30px;
+}
+
+h4 strong{
+  color: #e6df2f;
+}
+
+.this{
+  color: #f00b5f;
+  margin-top: 0px;
+  animation: glows 1s ease-in-out infinite alternate;
+}
+
+/* @keyframes glows {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #f06d6d, 0 0 30px #e6002a, 0 0 70px #e60004;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #c61111, 0 0 60px #f50909, 0 0 80px #f21010;
+  }
+} */
+
+@keyframes glows {
+  from {
+      text-shadow: 0 0 10px #fff, 0 0 30px #e72baf, 0 0 50px #e60073;
+  }
+  to {
+      text-shadow: 0 0 20px #fff, 0 0 40px #ff4da6, 0 0 60px #ff4da6;
+  }
+}
+.content-b {
+  position: absolute;
+  color:#111176;
+  padding: 5px;
+  border-radius: 10px;
+  width: 100vh;
+  height: 100vh;
+  margin-top: 180px;
+  
+  text-align: center;
+  
+}
+.info{
+  font-weight: 900;
+  color: #d3da13;
+}
+.btn {
+  border-radius: 2rem;
+  padding: 0.6rem 1.8rem;
+}
+
+.ba{
+  margin-top: 0px;
+  margin-left: 0px;
+
+}
+.btn-lg{
+  margin-inline: 60px;
+  border-width: 2px;
+  border-color: rgb(13, 8, 8);
+  border-radius: 50px;
+
+}
+.bl{
+  color: white;
+  background-color: #2b2567;
+}
+
+.bl:hover{
+  background-color: #ed1cb5;
+}
+.bs{
+  color: white;
+  background-color: #2b2567;
+}
+.bs:hover{
+  background-color: #e3ea08;
+}
+
+.bd{
+  font-size: 20px;
+  /* margin-inline: 70px; */
+  margin-left: 30px;
+  margin-right: 80px;
+  border-width: 2px;
+  border-color: rgb(13, 8, 8);
+  border-radius: 50px;
+}
+
+.btl{
+  margin-left: 120px;
+}

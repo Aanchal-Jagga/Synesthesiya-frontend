@@ -1,0 +1,60 @@
+.echoes textarea {
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.echoes button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+.echoes audio {
+  width: 100%;
+  max-width: 500px;
+}
+.echo{
+    color: rgb(46, 204, 215);
+    
+    /* animation: glows 1s ease-in-out infinite alternate; */
+}
+.form-c{
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 0px;
+  /* background-color: transparent; */
+  border-color: #86EFFF;
+  border-radius: 10px;
+  border-width: 4px;
+  color:#F2B2E0;
+  height: 180px;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+::placeholder{
+  color: plum;
+  font-weight: bold;
+  
+}
+.btn-g{
+    background-color: #ED94D3;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+    font-weight: 800;
+}
+.btn-g:hover{
+    background-color: #E06C98;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+}
+
+.ec{
+  color: #dcec00;
+  
+    animation: glows 1s ease-in-out infinite alternate;
+}

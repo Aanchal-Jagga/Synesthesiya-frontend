@@ -1,0 +1,124 @@
+  .about-section {
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    
+  }
+  .mission-content{
+    width: 650px;
+    margin-right: 700px;
+    font-size: 25px;
+  }
+
+  .work2{
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: #7be8d1;
+    animation: glows 1s ease-in-out infinite alternate;
+    
+  }
+  .story{
+    margin-bottom: 300px;
+    font-size: 20px;
+    width: 1000px;
+    color: #62e5de;
+    font-weight: 900;
+  }
+  .story p{
+    background-color: #02020285;
+    border-radius: 10px;
+  }
+  .work{
+    font-size: 70px;
+    margin-bottom: 30px;
+    color: rgb(188, 9, 62);
+    animation: glows 1s ease-in-out infinite alternate;
+
+  }
+  /* .bg1 {
+    background: url('../assets/bg1.jpg') center/cover no-repeat fixed;
+  } */
+  
+  /* .bg2 {
+    background: url('./try1.png') center/cover no-repeat fixed;
+  } */
+  
+  /* .bg3 {
+    background: url('../assets/bg3.jpg') center/cover no-repeat fixed;
+  } */
+  
+  .solid-section {
+    background-color: #121212;
+  }
+  
+  .team-section {
+    position: relative;
+    background: linear-gradient(to bottom right, #150035, #1f004e);
+    color: white;
+    padding: 100px 20px;
+    height: 650px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .team-images .team-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    max-width: 30%;
+    opacity: 0.8;
+    z-index: 1;
+  }
+
+  .team-img.left {
+    left: 20px;
+    height:400px;
+    width: 400px;
+
+  }
+
+  .team-img.right {
+    right: 20px;
+    height:400px;
+    width: 400px;
+  }
+  
+  .team-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .work3 {
+    color: #1cecd7;
+    
+    font-size: 70px;
+    margin-bottom: 20px;
+    animation: glows 1s ease-in-out infinite alternate;
+  }
+  
+  .team-content p {
+    font-size: 1.25rem;
+    color: #f5f5f5;
+    width: 650px;
+    margin-left: 70px;
+  }
+  
+  .work4{
+    
+    font-size: 70px;
+    margin-bottom: 30px;
+    animation: glows 1s ease-in-out infinite alternate;
+  }
+
+  .join-content{
+    font-size: 25px;
+  }

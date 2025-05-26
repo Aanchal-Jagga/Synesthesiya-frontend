@@ -1,0 +1,64 @@
+.dream-scenes input {
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.dream-scenes button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+.dream-scenes img {
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+
+.ds{
+    color: rgb(235, 10, 10);
+    animation: glows 1s ease-in-out infinite alternate;
+    font-weight: 900;
+}
+.dss{
+      color: rgb(241, 5, 194);
+    /* animation: glows 1s ease-in-out infinite alternate; */
+    font-weight: 900;
+}
+.form-c2{
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 0px;
+  /* background-color: transparent; */
+  border-color: #86EFFF;
+  border-radius: 10px;
+  border-width: 4px;
+  color:#F2B2E0;
+  height: 60px;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+::placeholder{
+  color: plum;
+  font-weight: bold;
+  
+}
+.btn-g{
+    background-color: #ED94D3;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+    font-weight: 800;
+}
+.btn-g:hover{
+    background-color: #E06C98;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+}

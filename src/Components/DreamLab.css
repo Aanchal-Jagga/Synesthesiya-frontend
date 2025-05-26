@@ -1,0 +1,111 @@
+body {
+    background-image: url('C:\react\synsthesia\public\dl.jpg'); /* Replace with the path to your image */
+    background-attachment: fixed;
+    background-size: cover; /* Or 'contain', '100%' depending on desired effect */
+    background-position: center;
+    width: 100%; /* Or top, bottom, left, right */
+    height: 50%;
+
+}
+
+.tc{
+    color: rgb(46, 204, 215);
+    
+    /* animation: glows 1s ease-in-out infinite alternate; */
+}
+.gi{
+  color:rgb(10, 8, 8) ;
+  font-weight: 900;
+  animation: glows 1s ease-in-out infinite alternate;
+}
+
+.form-cm{
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 0px;
+  /* background-color: transparent; */
+  border-color: #86EFFF;
+  border-radius: 10px;
+  border-width: 4px;
+  color:#F2B2E0;
+  height: 60px;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+::placeholder{
+  color: plum;
+  font-weight: bold;
+  
+}
+.form-l{
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 0px;
+    color: rgb(39, 251, 237);
+}
+.btn-p{
+    width: 200px;
+    padding: 12px;
+    background-color: #ED94D3;
+    border: none;
+    border-radius: 10px;
+    font-weight: 900;
+    color: black;
+    font-size: 18px;
+    margin-top: 0px;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+
+.btn-p:hover {
+  background-color: #E06C98;
+}
+.gen-s{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+}
+.gen-s p{
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.836);
+  color: #ffffff;
+  border-radius: 10px;
+
+}
+
+.gen-v audio{
+  margin-top: 25px;
+
+}
+.gen-v a{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+hr{
+  margin-top: 0px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); 
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.im{
+  height: 500px;
+}
+
+.image-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.scroll-image {
+  flex: 0 0 100%;
+  max-width: 100%;
+  scroll-snap-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
