@@ -165,74 +165,82 @@ const DreamLab = () => {
   };
 
   return (
-    <div className="container mt-5">
-      <h1 className="mb-4 text-center tc fw-bold">🌙 DreamLab</h1>
-
-      <div className="mb-3">
-        {/* <label htmlFor="topicInput" className="form-l">Enter a Topic</label> */}
-        <input
-          type="text"
-          className="form-cm"
-          id="topicInput"
-          placeholder="Enter a Topic ~  e.g. A magical forest at night"
-          value={topic}
-          onChange={(e) => setTopic(e.target.value)}
-        />
-      </div>
-
-      <div className="text-center ">
-        <button
-          className="btn btn-p mb-5"
-          onClick={handleSubmit}
-          disabled={loading || !topic.trim()}
+    <div className="back" 
+        // style={{
+        //   backgroundImage: "url('/dl.jpg')",backgroundSize: "cover",
+        // backgroundRepeat: "no-repeat",
+        // backgroundPosition: "center",}} 
         >
-          {loading ? 'Generating...' : 'Generate Story'}
-        </button>
-      </div>
+      <div className="container mt-5">
+        <h1 className="mb-4 text-center tc fw-bold">🌙 DreamLab</h1>
 
-      <hr/>
-
-      {story && (
-        <div className="mb-5 gen-s">
-          <h4 className='gi'>📝 Generated Story</h4>
-          <p>{story}</p>
+        <div className="mb-3">
+          {/* <label htmlFor="topicInput" className="form-l">Enter a Topic</label> */}
+          <input
+            type="text"
+            className="form-cm"
+            id="topicInput"
+            placeholder="Enter a Topic ~  e.g. A magical forest at night"
+            value={topic}
+            onChange={(e) => setTopic(e.target.value)}
+          />
         </div>
-      )}
-      
-      {imageUrls.length > 0 && (
-        <div className="mb-5">
-          <h4 className='mb-4 gi'>🖼️ Generated Images</h4>
-          
-          <div className="image-scroll-container" >
-            {imageUrls.map((url, idx) => (
-            <div key={idx} className="mb-3">
-              <img src={url} alt={`Generated ${idx + 1}`} className="img-fluid im rounded mb-2" />
-              <br />
-              <a href={url} download={`generated-image-${idx + 1}.png`} target="_blank" rel="noopener noreferrer" className="btn btn-success">
-                ⬇️ Download Image {idx + 1}
-              </a>
-            </div>
-          ))}
+
+        <div className="text-center ">
+          <button
+            className="btn btn-p mb-5"
+            onClick={handleSubmit}
+            disabled={loading || !topic.trim()}
+          >
+            {loading ? 'Generating...' : 'Generate Story'}
+          </button>
+        </div>
+
+        <hr/>
+
+        {story && (
+          <div className="mb-5 gen-s">
+            <h4 className='gi'>📝 Generated Story</h4>
+            <p>{story}</p>
           </div>
-          
+        )}
+        
+        {imageUrls.length > 0 && (
+          <div className="mb-5">
+            <h4 className='mb-4 gi'>🖼️ Generated Images</h4>
+            
+            <div className="image-scroll-container" >
+              {imageUrls.map((url, idx) => (
+              <div key={idx} className="mb-3">
+                <img src={url} alt={`Generated ${idx + 1}`} className="img-fluid im rounded mb-2" />
+                <br />
+                <a href={url} download={`generated-image-${idx + 1}.png`} target="_blank" rel="noopener noreferrer" className="btn btn-success">
+                  ⬇️ Download Image {idx + 1}
+                </a>
+              </div>
+            ))}
+            </div>
+            
+          </div>
+        )}
+
+        
+        {voiceUrl && voiceUrl.startsWith('http') && (
+        <div className="mb-4 gen-v">
+          <h4 className='gi'>🔊 Voice Narration</h4>
+          <audio ref={audioRef} controls className="mb-2" preload="metadata">
+            <source src={voiceUrl} type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <br />
+          <a href={voiceUrl} download="voice-narration.mp3"   target="_blank"  rel="noopener noreferrer" className="btn btn-success">
+            ⬇️ Download Voice
+          </a>
         </div>
       )}
-
-      
-      {voiceUrl && voiceUrl.startsWith('http') && (
-      <div className="mb-4 gen-v">
-        <h4 className='gi'>🔊 Voice Narration</h4>
-        <audio ref={audioRef} controls className="mb-2" preload="metadata">
-          <source src={voiceUrl} type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <br />
-        <a href={voiceUrl} download="voice-narration.mp3"   target="_blank"  rel="noopener noreferrer" className="btn btn-success">
-          ⬇️ Download Voice
-        </a>
       </div>
-    )}
     </div>
+    
   );
 };
 

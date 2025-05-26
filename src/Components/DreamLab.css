@@ -1,5 +1,6 @@
 body {
-    background-image: url('C:\react\synsthesia\public\dl.jpg'); /* Replace with the path to your image */
+    /* background-image: url('C:\react\synsthesia\public\dl.jpg');  */
+    
     background-attachment: fixed;
     background-size: cover; /* Or 'contain', '100%' depending on desired effect */
     background-position: center;
@@ -7,7 +8,14 @@ body {
     height: 50%;
 
 }
-
+/* .back{
+  height: 200vh;
+      background-attachment: fixed;
+    background-size: cover; /* Or 'contain', '100%' depending on desired effect */
+    /* background-position: center;
+    margin-top: 0;
+    padding: 0;
+} */ 
 .tc{
     color: rgb(46, 204, 215);
     
