@@ -41,7 +41,7 @@ const Echoes = () => {
       };
 
       const response = await axiosInstance.post(
-        'https://9093-49-36-191-40.ngrok-free.app/text-to-speech',
+        'https://synesthesiya-backend-po7u.onrender.com/text-to-speech',
         {
           text: text.trim(),
           voice_id: 'en-US-Standard-D', // or dynamic if needed

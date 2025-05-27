@@ -32,7 +32,7 @@ const DreamScenes = () => {
       };
 
       const response = await axiosInstance.post(
-        'https://9093-49-36-191-40.ngrok-free.app/generate-image',
+        'https://synesthesiya-backend-po7u.onrender.com/generate-image',
         {
           prompt: prompt.trim(),
           user_id: localId,

@@ -62,7 +62,7 @@ const DreamLab = () => {
 
       // 1. Generate Story
       const storyRes = await axiosInstance.post(
-        'https://9093-49-36-191-40.ngrok-free.app/generate-story',
+        'https://synesthesiya-backend-po7u.onrender.com/generate-story',
         { user_id: localId, prompt: topic.trim() },
         config
       );
@@ -76,7 +76,7 @@ const DreamLab = () => {
 
       setStory(generatedStory);
 
-      const saveResponse = await axiosInstance.post('https://9093-49-36-191-40.ngrok-free.app/save-story', {
+      const saveResponse = await axiosInstance.post('https://synesthesiya-backend-po7u.onrender.com/save-story', {
         text:generatedStory,
         title:"string",
         user_id:localId, // from Firebase auth
@@ -86,7 +86,7 @@ const DreamLab = () => {
 
       // 2. Generate Image
       const imageRes = await axiosInstance.post(
-        'https://9093-49-36-191-40.ngrok-free.app/generate-story-images',
+        'https://synesthesiya-backend-po7u.onrender.com/generate-story-images',
         {
           story_id: storyId,   
           user_id: localId,              
@@ -116,7 +116,7 @@ const DreamLab = () => {
 
       // 3. Generate Voice
       const voiceRes = await axiosInstance.post(
-        'https://9093-49-36-191-40.ngrok-free.app/generate-voice',
+        'https://synesthesiya-backend-po7u.onrender.com/generate-voice',
         
         { text: generatedStory,
           voice_id:"en-US-Standard-D",

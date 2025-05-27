@@ -30,7 +30,7 @@ class Login extends Component {
     const { email, password } = this.state;
 
     try {
-      const response = await axios.post('https://9093-49-36-191-40.ngrok-free.app/login', {
+      const response = await axios.post('https://synesthesiya-backend-po7u.onrender.com/login', {
         email,
         password,
       });

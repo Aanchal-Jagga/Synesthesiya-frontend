@@ -68,7 +68,7 @@ class Signup extends Component {
   // sendVerificationEmail = async (localId, idToken) => {
   //   try {
   //     const response = await axios.post(
-  //       'https://9093-49-36-191-40.ngrok-free.app/send-verification',
+  //       'https://synesthesiya-backend-po7u.onrender.com/send-verification',
   //       { user_id: localId },
   //       {
   //         headers: {
@@ -91,7 +91,7 @@ class Signup extends Component {
     this.setState({ isLoading: true });
 
     try {
-      const response = await axios.post('https://9093-49-36-191-40.ngrok-free.app/signup', {
+      const response = await axios.post('https://synesthesiya-backend-po7u.onrender.com/signup', {
         username,
         email,
         password
